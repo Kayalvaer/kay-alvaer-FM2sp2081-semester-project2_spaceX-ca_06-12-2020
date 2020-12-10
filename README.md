@@ -1,8 +1,9 @@
-<h1 align="center">SpaceX FanClub</h1>
+<h1 align ="center">SpaceX FanClub</h1>
 
 ##Project 2
 
 This project is the second project of our software development diploma at Noroff College.The main requirements is to build an interactive front-end site which responds to the users' actions using HTML, CSS, JavaScript and APIs.
+Space Exploration Technologies Corp. (SpaceX), an American aerospace manufacturer and space transportation services company with headquarters in Hawthorne, California. The company was founded in 2002 by Elon Musk with the goal of reducing space transportation costs to enable the colonization of Mars. Overtime SpaceX has developed several launch vehicles, including the Starlink satellite constellation, the Dragon cargo spacecraft, and flown humans to the International Space Station on the SpaceX Dragon 2.
 
 **[View project Github repository here.](https://github.com/Kayalvaer/kay-alvaer-FM2sp2081-semester-project2_spaceX-ca_06-12-2020.git)**
 **[View live project here.](http://kayalvaer.no/spacex-api/index.html)**
@@ -32,6 +33,7 @@ This project is the second project of our software development diploma at Noroff
 
 ### 1.1 Project goals
 
+- Project requirement was to crete a microsite for SpaceX/NASA to raise awareness about space program activity around the world. The site should appeal to a specific target audience and provide links to more information, live feeds of launches, and so forth.
 - The goal of this project is the design an interactive front-end site. The site should consider the design principles in order to achieve a desired user experience for the targeted personas. This will take into consideration the typography, the color choice to match the target users and incorporate the african headman experience.
 
 <span id="ux-stories"></span>
@@ -40,13 +42,13 @@ This project is the second project of our software development diploma at Noroff
 
 _**Developer**_
 
-1. As the developer, I want the website to show my ability to code in HTML and CSS and use of javascript, So I can achieve a positive user experience for the site visitors.
+1. As the developer, I want the website to show my ability to code in HTML and CSS and use of javascript, api and json So I can achieve a positive user experience for the site visitors.
 2. As the developer, I want the site to function well and load connecting plugin, So that users can connect with its history.
 3. As a developer, I want the site to be played on all devices and internet browser.
 
 _**Site users**_
 
-**As a player I want:**
+**As a user I want:**
 
 1. As a user, I want to easily understand how to the mission of spaceX.
 2. As a user, I want to enjoy browsing the site so that i can recommend it to others.
@@ -91,12 +93,12 @@ The color choice of this project was putting into consideration the history and 
 
 ### 1.4 Wireframes
 
-Paper wireframes and Mockup on figma was designed for the project. Most of the work was done on paper because of the strategic placing of the board nodes which were challenging.The mockups were designed with [Figma](https://www.figma.com/proto/JByjPwrRtqQ5uZejpJUT8h/Untitled?node-id=3%3A0&scaling=min-zoom)
+Paper wireframes and Mockup on figma was designed for the project. Most of the work was done on paper.The mockups were designed with [Figma](https://www.figma.com/proto/JByjPwrRtqQ5uZejpJUT8h/Untitled?node-id=3%3A0&scaling=min-zoom)
 
 The wireframes were as follows:
 ![paper wireframes](assets/imgs/paper-drafts.png)
 
-**Note:** I changed the layout of site many times.
+**Note:** I changed the layout of site two times.
 
 <span id="features"></span>
 
@@ -179,7 +181,7 @@ Commit done.
 
 ## Testing During Development
 
-Much of the testing my JavaScript code was done throughout the development process using `console.log` within each function to report on what variables and arrays were being generated at each stage of the site. Read the output and used breakpoint to check the location of my nodes and the movement action as i manually tested them. that allowed me to fix any code error on the process.
+Much of the testing my JavaScript code was done throughout the development process using `console.log` within each function to report on what variables and arrays were being generated at each stage of the site. Read the output and used breakpoint and console network to check the location of my errors and the movement action as i manually tested them. that allowed me to fix any code error on the process.
 
 ## Code Validation
 
@@ -189,7 +191,7 @@ Used the W3C Markup Validation Service to test the validity of my HTML as I go a
 
 ### CSS
 
-I used the W3C CSS Validation Service to test the validity of my CSS. It didn't flag any issues.
+I used the W3C CSS Validation Service to test the validity of my CSS.
 
 ### JavaScript and JQuery
 
@@ -201,7 +203,7 @@ Google Developer tools was used to test the layout of my site on multiple device
 
 ### Performance
 
-Lighthouse tool on the Google Developer software was useful to test the performance of my game. It flagged several errors which some were resolved.
+Lighthouse tool on the Google Developer software was useful to test the performance of my site. It flagged several errors which some were resolved using the console.The project could do with more debugging and testing.
 
 <span id="deployment"></span>
 
@@ -236,7 +238,7 @@ To clone this project from GitHub:
 
 #### Content
 
-- All text in this project is original content.
+- All text in this project is original content and some help from Noroff College tutorials .
 - The developer took inspiration from several tutorials and other resources.
 
 **Other resources**

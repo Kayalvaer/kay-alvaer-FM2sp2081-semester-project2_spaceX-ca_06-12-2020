@@ -1,0 +1,508 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,600;0,700;1,300&family=Padauk&family=Special+Elite&display=swap");
+@import "./variables.css";
+
+/* general */
+* {
+    padding: 0;
+    margin: 0 auto;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: var(--pure);
+}
+
+/* Navigation */
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 10vh;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: -30vh;
+    border-bottom: .5px solid var(--green);
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+}
+
+/* nav {
+    width: 80%;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+} */
+
+/* nav {
+    align-items: center;
+    border-bottom: 1px solid var(--white);
+    padding: 0 auto;
+    top: 0;
+  } */
+
+nav.nav {
+    margin-top: 0;
+}
+
+.nav-list {
+    display: flex;
+    gap: 18px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .nav-list li {
+    list-style: none;
+    font-family: "Padauk", sans-serif;
+}
+
+nav.nav-x {
+    margin: 0 auto;
+}
+
+header nav .nav-list a {
+    text-decoration: none;
+    color: var(--white);
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+header nav .nav-list a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    width: 0%;
+    height: 2px;
+    background: var(--orange);
+    transition: all 0.5s ease-in-out;
+}
+
+header nav .nav-list a:hover:after {
+    width: 100%;
+}
+
+/* header nav .nav-list a:active:after{
+    width:70%;
+
+} */
+
+
+
+
+header nav .nav-list a:hover {
+    color: var(--orange);
+    cursor: pointer;
+    background: transparent;
+}
+
+header nav .nav-list li.active a:hover {
+    color: var(--orange);
+    font-weight: 500;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 18px;
+}
+
+/* logo */
+
+.logo {
+    flex-basis: 20%;
+}
+
+.logo img {
+    width: 150px;
+}
+
+/* search input */
+
+.search-info {
+    background: rgb(171, 164, 164);
+    display: flex;
+    align-items: center;
+    padding: 5px 12px;
+    border-radius: 50px;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.search-info input {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    color: #fff;
+}
+
+.search-info img {
+    padding-right: 10px;
+}
+
+/* search input */
+.search-icon {
+    color: var(--gray);
+}
+
+/* dropdown menu */
+.mobileView .navBar div {
+    display: flex;
+    flex-direction: column;
+    width: 25px;
+    height: 3px;
+    background-color: var(--white);
+    margin: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.mobileView .navBar .navLines {
+    transform-origin: left;
+    transition: all 0.3s ease-in-out;
+}
+
+.navBar div {
+    display: none;
+}
+
+.navBar {
+    z-index: 1000;
+}
+
+ul {
+    background: -webkit-linear-gradient(45deg, #434343, #000000);
+    background: -linear-gradient(45deg, #434343, #000000);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+    padding-bottom: 200px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease-in-out;
+}
+
+.navBar,
+.nav-x {
+    z-index: 9999;
+}
+
+.mobileView ul.nav-list.show-nav-list {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.mobileView ul.nav-list li a {
+    font-size: 20px;
+}
+
+.mobileView .navBar {
+    transition: all 0.4s ease-in-out;
+}
+
+
+
+
+/* hero section */
+
+
+
+.main-sec {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: url(/assets/imgs/juri-noga-HMIJj2pGGGY-unsplash.png);
+    min-height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+
+/* 
+
+
+
+
+.nav-list {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-list ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.nav-list ul li a {
+    color: var(--white);
+    text-decoration: none;
+} */
+
+/* main content page */
+
+.x-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content {
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: right;
+}
+
+#round {
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: 1s;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+/*explore content */
+
+.explore-info img {
+    width: 90px;
+}
+
+.explore-info {
+    position: absolute;
+    display: flex;
+    color: var(--white);
+}
+
+.explore-info div {
+    margin-left: 30px;
+}
+
+.explore-info div p {
+    margin-top: 7px;
+}
+
+
+.first {
+    top: 430px;
+    right: 25px;
+    flex: 1;
+}
+
+.second {
+    top: 200px;
+    left: 350px;
+    transform: rotate(-90deg);
+    flex: 1;
+}
+
+.third {
+    bottom: 440px;
+    left: 30px;
+    transform: rotate(-180deg);
+    flex: 1;
+}
+
+.fourth {
+    bottom: 150px;
+    right: 320px;
+    transform: rotate(-270deg);
+    flex: 1;
+}
+
+/* astronaut hero image */
+
+.astronaut {
+    width: 400px;
+    position: absolute;
+    top: 52%;
+    left: 28%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+/* Control arrows */
+
+.arrow-tags {
+    position: absolute;
+    top: 92%;
+    right: 10%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.arrow-tags h3 {
+    margin: 15px 0;
+    color: var(--smoke);
+
+}
+
+#btnOpp,
+#btnNed {
+    width: 35px;
+    cursor: pointer;
+    color: white;
+
+}
+
+img#btnOpp:hover,
+img#btnNed:hover {
+    transform: scale(0.9);
+    color: var(--orange);
+}
+
+#btnNed {
+    transform: rotate(180deg);
+}
+
+.hide-content {
+    width: 0;
+    height: 0;
+    border-top: 500px solid var(--white);
+    border-right: 500px solid transparent;
+    border-bottom: 500px solid var(--white);
+    border-left: 500px solid var(--white);
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+
+/* media query */
+@media (min-width: 320px) and (max-width: 768px) {
+
+    .explore-info p {
+        visibility: hidden;
+        clear: both;
+        display: none;
+    }
+
+    explore-info img {
+        width: 50%;
+    }
+
+    .astronaut {
+        width: 350px;
+        top: 50%;
+        left: 33%;
+    }
+
+    .content {
+        font-size: xx-small;
+    }
+
+    .arrow-tags {
+        top: 90%;
+        right: 2%;
+    }
+
+
+}
+
+@media (min-width: 320px) and (max-width: 544px) {
+    #round {
+        background-color: var(--gray);
+        width: 300px;
+        height: 300px;
+    }
+
+    .hide-content {
+        border-top: transparent;
+        border-bottom: transparent;
+        border-left: transparent;
+    }
+
+    .content {
+        width: 500px;
+        height: 500px;
+    }
+
+    .astronaut {
+        width: 300px;
+        top: 74%;
+        left: 41%;
+    }
+
+    .arrow-tags {
+        top: 40%;
+    }
+
+    .second {
+        top: 130px;
+        left: 350px;
+    }
+
+    .third {
+        left: 2px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .first {
+        top: 430px;
+        right: 25px;
+    }
+
+    .second {
+        top: 220;
+    }
+
+    .third {
+        left: 22px;
+    }
+
+    .fourth {
+        bottom: 102px;
+        right: 362px;
+    }
+
+    .arrow-tags h3 {
+        color: var(--blue);
+    }
+
+    .nav-x .navBar div {
+        color: var(--gray);
+    }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .fourth {
+        bottom: 155px;
+        right: 280px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 667px) {
+    .arrow-tags {
+        top: 90%;
+    }
+}

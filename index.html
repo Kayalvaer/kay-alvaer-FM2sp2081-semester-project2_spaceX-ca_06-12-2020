@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Latest SpaceX launches.View schedules and explore past missions." />
+    <meta name="keywords" content="spaceX, nasa, falcon 9, starship, rockets, api" />
+    <meta name="author" content="kay alvaer" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <!-- google-fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|VT323" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
+        type="text/css" />
+    <!-----font awesome ----->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous" />
+
+    <title>Space X</title>
+    <link rel="stylesheet" type="text/css" href="css/imports/index.css" />
+</head>
+
+<body>
+    <div class="main-sec">
+        <!-----Navigation updated------->
+
+        <section class="mobileView">
+            <div>
+                <header>
+                    <nav>
+                        <div class="nav-x">
+                            <a href="./index.html">
+                                <img class="logo" src="/assets/imgs/Spacex-club-orangeLogo.svg" height="190px"
+                                    alt="logo and homepage" />
+                            </a>
+                        </div>
+
+                        <div class="navBar">
+                            <div class="navLines"></div>
+                            <div class="navLines"></div>
+                            <div class="navLines"></div>
+                        </div>
+
+                        <div>
+                            <ul class="nav-list">
+                                <li class="active">
+                                    <a href="/index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="rockets.html">Rockets</a>
+                                </li>
+                                <li>
+                                    <a href="launches.html">Launches</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                            <div class="search-txt">
+                                <div class="search-info">
+                                    <img class="search-icon" src="/assets/imgs/icons8-search-26.png" height="16px"
+                                        alt="search icon" />
+                                    <input type="text" placeholder="search" />
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+            </div>
+        </section>
+
+
+
+
+        <!----------Hero section-------->
+        <div class="x-wrapper">
+            <div class="content">
+                <div class="hide-content"></div>
+                <img src="/assets/imgs/austranaut-history-in-hd-e5eDHbmHprg-unsplash.png" alt="austronaut image"
+                    class="astronaut">
+                <div id="round">
+                    <div class="explore-info first">
+                        <img src="/assets/imgs/Elon_Musk_Royal_Society.png" width="70px" alt="">
+                        <div>
+                            <h1>-Elon Mask</h1>
+                            <h4>Founded spaceX in 2002</h4>
+                            <p>"Make space available for all"</p>
+                        </div>
+                    </div>
+                    <div class="explore-info second">
+                        <img src="/assets/imgs/NASA_logo.svg" width="70px" alt="">
+                        <div>
+                            <h1>NASA</h1>
+                            <p>Responsible for space </p>
+                        </div>
+
+                    </div>
+                    <div class="explore-info third">
+                        <img src="/assets/imgs/COTS2Dragon.6.png" width="90px" alt="">
+                        <div>
+                            <h1>Dragon Cargo</h1>
+                            <p>Cargo spacecraft</p>
+                        </div>
+
+                    </div>
+                    <div class="explore-info fourth">
+                        <img src="/assets/imgs/Crew_Dragon_at_the_ISS_for_Demo_Mission_1_(cropped).png" width="100px"
+                            alt="">
+                        <div>
+                            <h1>SpaceX Dragon2</h1>
+                            <h4>Diameter: 4m, Height 8.1m </h4>
+                            <p>Flown human to space</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="arrow-tags">
+                <img src="/assets/imgs/arrow-orange-2.png" alt="arrow up" id="btnOpp">
+                <h3>Explore Facts</h3>
+                <img src="/assets/imgs/arrow-orange-2.png" alt="arrow down" id="btnNed">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!------Timer section----->
+    <section>
+        <div id="timer-container">
+
+        </div>
+    </section>
+
+
+
+    <script src="js/components/message.js"></script>
+    <script src="./js/home.js"></script>
+    <script src="./js/responsive.js"></script>
+    <script src="./js/timer.js"></script>
+</body>
+
+</html>

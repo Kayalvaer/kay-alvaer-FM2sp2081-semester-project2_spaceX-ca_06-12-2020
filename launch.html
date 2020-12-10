@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Latest SpaceX launches.View schedules and explore past missions." />
+    <meta name="keywords" content="spaceX, nasa, falcon 9, starship, rockets, api" />
+    <meta name="author" content="kay alvaer" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <!-- google-fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|VT323" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
+        type="text/css" />
+    <!-----font awesome ----->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous" />
+
+    <title>Space X</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+</head>
+
+<body>
+    <div class="main-sec">
+        <!-----Navigation updated------->
+
+        <section class="mobileView">
+            <div>
+                <header>
+                    <nav>
+                        <div class="nav-x">
+                            <a href="./index.html">
+                                <img class="logo" src="/assets/imgs/Spacex-club-orangeLogo.svg" height="190px"
+                                    alt="logo and homepage" />
+                            </a>
+                        </div>
+
+                        <div class="navBar">
+                            <div class="navLines"></div>
+                            <div class="navLines"></div>
+                            <div class="navLines"></div>
+                        </div>
+
+                        <div>
+                            <ul class="nav-list">
+                                <li class="active">
+                                    <a href="/index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="rockets.html">Rockets</a>
+                                </li>
+                                <li>
+                                    <a href="launches.html">Launches</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                            <div class="search-txt">
+                                <div class="search-info">
+                                    <img class="search-icon" src="/assets/imgs/icons8-search-26.png" height="16px"
+                                        alt="search icon" />
+                                    <input type="text" placeholder="search" />
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+            </div>
+        </section>
+        <!-- container result from fetch rockets api  -->
+        <section class="rocket-api">
+            <div class="apiContainer apiInfo">
+                <h1 class="rocketsHeading">Launches</h1>
+                <div class="rockets">
+                    <div class="loader"></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="powered">API powered by <a href="https://spacex.com/" target="_blank">SpaceX</a></div>
+
+        </section>
+
+        <script src="js/components/message.js"></script>
+        <script src="./js/details.js"></script>
+        <script src="./js/launch.js"></script>
+        <script src="./js/rockets.js"></script>
+
+</body>
+
+</html>

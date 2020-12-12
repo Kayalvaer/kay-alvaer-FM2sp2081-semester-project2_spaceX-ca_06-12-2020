@@ -33,8 +33,8 @@ async function fetchRockets() {
                         <div class = "details">
                             <h4 class = "rocketName">${rockets[i].rocket_name}</h4>
                         </div>
-                        <p class="rocket-btn"> View <i class = "fas fa-rocket" ></i><a target = "_blank" href = "${launches[i].links.wikipedia}"> wikipedia 
-                    </a></p>
+                      
+                        <p class="rocket-btn">View<a target="_blank" href="${rockets[i].wikipedia}"></a><p>
                        
                         </a></div>`;
 

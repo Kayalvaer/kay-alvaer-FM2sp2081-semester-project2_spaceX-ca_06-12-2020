@@ -36,13 +36,17 @@ body {
 
 
 .rocketsContainer {
-
     background-color: var(--mild);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    margin: 20px;
+    margin: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background: linear-gradient(rgba(88, 92, 98, 0.9), rgba(23, 29, 40, 0.9)), url(/assets/imgs/50618355216_5e55630344_c.jpg);
 }
 
 .rockets {
@@ -66,11 +70,11 @@ body {
     text-decoration: none;
     width: 350px;
     height: 350px;
-    box-shadow: 0 15px 35px rgba(251, 250, 250, 0.2);
+    box-shadow: 0 10px 30px rgba(255, 128, 0, 0.2);
     border-radius: 8px;
     align-items: center;
     position: relative;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(205, 202, 202, 0.2);
 
 }
 
@@ -80,7 +84,6 @@ body {
 
 .rocket-image img {
     width: 350px;
-    height: 100%;
     border-radius: 8px;
     background-size: cover;
     background-position: center top;
@@ -100,16 +103,16 @@ h4.rocketName {
 p.rocket-btn {
 
     border: none;
-    width: 110px;
+    width: 100px;
     height: 40px;
-    padding: 0.7rem;
+    padding: 0.4rem;
     color: white;
-    margin-top: 10px;
     cursor: pointer;
     border-radius: 0.4rem;
     display: flex;
-    justify-content: center;
+    padding-left: 23px;
     text-align: center;
+    align-items: center;
     font-size: 20px;
     font-weight: bolder;
 }

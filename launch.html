@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
         integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous" />
 
-    <title>Space X</title>
+    <title>Space X | Launch page</title>
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
 </head>
 
@@ -60,22 +60,24 @@
                                     <a href="contact.html">Contact</a>
                                 </li>
                             </ul>
-                            <div class="search-txt">
-                                <div class="search-info">
-                                    <img class="search-icon" src="/assets/imgs/icons8-search-26.png" height="16px"
-                                        alt="search icon" />
-                                    <input type="text" placeholder="search" />
-                                </div>
+                        </div>
+                        <div class="search-txt">
+                            <div class="search-info">
+                                <img class="search-icon" src="/assets/imgs/icons8-search-26.png" height="16px"
+                                    alt="search icon" />
+                                <input type="text" placeholder="search" />
                             </div>
                         </div>
+
                     </nav>
+                </header>
             </div>
         </section>
         <!-- container result from fetch rockets api  -->
-        <section class="rocket-api">
-            <div class="apiContainer apiInfo">
+        <section class="LaunchApi">
+            <div class="launchContainer">
                 <h1 class="rocketsHeading">Launches</h1>
-                <div class="rockets">
+                <div class="launches">
                     <div class="loader"></div>
                 </div>
             </div>
@@ -83,12 +85,11 @@
 
         <div class="powered">API powered by <a href="https://spacex.com/" target="_blank">SpaceX</a></div>
 
-        </section>
+        <!-- </section> -->
 
         <script src="js/components/message.js"></script>
-        <script src="./js/details.js"></script>
         <script src="./js/launch.js"></script>
-        <script src="./js/rockets.js"></script>
+        <script src="./js/index.js"></script>
 
 </body>
 

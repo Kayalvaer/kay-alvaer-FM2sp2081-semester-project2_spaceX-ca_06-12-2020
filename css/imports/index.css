@@ -177,9 +177,9 @@ header nav .nav-list li.active a:hover {
     display: none;
 }
 
-.navBar {
+/* .navBar {
     z-index: 1000;
-}
+} */
 
 ul {
     background: -webkit-linear-gradient(45deg, #434343, #000000);
@@ -234,26 +234,6 @@ ul {
     position: relative;
 }
 
-/* 
-
-
-
-
-.nav-list {
-    flex: 1;
-    text-align: right;
-}
-
-.nav-list ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-}
-
-.nav-list ul li a {
-    color: var(--white);
-    text-decoration: none;
-} */
 
 /* main content page */
 
@@ -393,116 +373,4 @@ img#btnNed:hover {
     left: 0;
     top: 0;
 
-}
-
-/* media query */
-@media (min-width: 320px) and (max-width: 768px) {
-
-    .explore-info p {
-        visibility: hidden;
-        clear: both;
-        display: none;
-    }
-
-    explore-info img {
-        width: 50%;
-    }
-
-    .astronaut {
-        width: 350px;
-        top: 50%;
-        left: 33%;
-    }
-
-    .content {
-        font-size: xx-small;
-    }
-
-    .arrow-tags {
-        top: 90%;
-        right: 2%;
-    }
-
-
-}
-
-@media (min-width: 320px) and (max-width: 544px) {
-    #round {
-        background-color: var(--gray);
-        width: 300px;
-        height: 300px;
-    }
-
-    .hide-content {
-        border-top: transparent;
-        border-bottom: transparent;
-        border-left: transparent;
-    }
-
-    .content {
-        width: 500px;
-        height: 500px;
-    }
-
-    .astronaut {
-        width: 300px;
-        top: 74%;
-        left: 41%;
-    }
-
-    .arrow-tags {
-        top: 40%;
-    }
-
-    .second {
-        top: 130px;
-        left: 350px;
-    }
-
-    .third {
-        left: 2px;
-    }
-
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    .first {
-        top: 430px;
-        right: 25px;
-    }
-
-    .second {
-        top: 220;
-    }
-
-    .third {
-        left: 22px;
-    }
-
-    .fourth {
-        bottom: 102px;
-        right: 362px;
-    }
-
-    .arrow-tags h3 {
-        color: var(--blue);
-    }
-
-    .nav-x .navBar div {
-        color: var(--gray);
-    }
-
-}
-
-@media (min-width: 1024px) and (max-width: 1366px) {
-    .fourth {
-        bottom: 155px;
-        right: 280px;
-    }
-}
-
-@media (min-width: 320px) and (max-width: 667px) {
-    .arrow-tags {
-        top: 90%;
-    }
 }

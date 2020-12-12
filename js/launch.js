@@ -1,44 +1,46 @@
-const rocketsContainer = document.querySelector(".rockets");
-const url = "https://api.spacexdata.com/v3/launches";
+const launchContainer = document.querySelector(".launches");
+const url = "https://api.spacexdata.com/v3/launches/";
+
+console.log(url);
+
+async function fetchLaunches() {
 
 
-
-async function fetchRockets() {
     try {
         const response = await fetch(url);
         const json = await response.json();
 
-        const rockets = json;
+        const launches = json;
 
         /* console.log(json); */
 
-        //details.forEach(function (rocket) {
+        //details.forEach(function (rocket) {})
 
-        //})
+        launchContainer.innerHTML = "";
 
-        rocketsContainer.innerHTML = "";
 
-        for (i = 0; i < rockets.length; i++) {
-            if (i === 9) {
-                break;
+        for (i = 0; i < launches.length; i++) {
+            if (launches[i].upcoming === false) {
+
+                launchContainer.innerHTML += `<div class = "launchInfo" >
+
+                    <div class = "launch-section" >
+                    <h3 > mission: ${launches[i].mission_name} </h3>     
+                    <p> date:${launches[i].launch_date_utc} </p>   
+                    </div>
+                    <div class = "launch-section">  
+                    <p> mission details:${launches[i].details} </p>              
+                    <p> cost per launch: ${launches[i].cost_per_launch}</p>   
+                    <p> Launch year: ${launches[i].launch_year} </p>   
+                    <p> View <i class = "fas fa-rocket" ></i><a target = "_blank" href = "${launches[i].links.wikipedia}"> wikipedia 
+                    </a></p>
+                    <p><a target = "_blank" href = "${launches[i].links.video_link}"> YouTube Link 
+                    </a></p> 
+                    </div> 
+
+                    </div>`;
             }
-
-            /*  onerror="this.style.display = 'none'" */
-
-            rocketsContainer.innerHTML += `<a href = "details.html?id=${rockets[i].rocket_id}" class="rocketCard">       
-                        <div class ="rocket-image">
-                        <img src="${rockets[i].flickr_images[0]}" width="400px" alt="${rockets[i].rocket_id}" /> 
-                        </div>
-                        <div class = "details">
-                            <h4 class = "rocketName">${rockets[i].mission_name}</h4>
-                        </div>
-                        <p class="rocket-btn">read more</i>
-                <a target="_blank" class="rocket-btn" href="${rockets[i].cost_per_launch}"></a><p>
-                        </a>`;
-
-
         }
-
 
     } catch (error) {
         console.log("error: occurred when calling the api code");
@@ -50,4 +52,4 @@ async function fetchRockets() {
 
 
 
-fetchRockets();
+fetchLaunches();

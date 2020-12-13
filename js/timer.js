@@ -8,7 +8,7 @@ async function run() {
         let item = details[i]
         let launchDate = Date.parse(item.launch_date_utc) - new Date()
         item.launchDate = launchDate
-        container.innerHTML += `<div>
+        container.innerHTML += `<div class="timerContainer">
                        Mission: <span>${item.mission_name}</span> <br>
                        Rocket Name: <span>${item.rocket.rocket_name} <br>
                        Timer: <span id="timer${i}"> ${launchDate <= 0 ? 'Launched': launchDate}</span>

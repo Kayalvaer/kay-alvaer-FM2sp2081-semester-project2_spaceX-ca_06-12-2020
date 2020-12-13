@@ -18,6 +18,7 @@ body {
 
 /* Navigation */
 
+
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -91,6 +92,16 @@ header nav .nav-list li.active a:hover {
     display: flex;
     justify-content: space-around;
     gap: 18px;
+}
+
+p.arrow-down {
+    width: 70px;
+    height: 70px;
+    line-height: 2rem;
+    color: var(--white);
+    font-size: xx-large;
+
+
 }
 
 /* logo */

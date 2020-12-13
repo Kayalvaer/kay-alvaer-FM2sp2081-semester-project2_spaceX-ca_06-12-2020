@@ -42,6 +42,7 @@ button {
 label {
     display: block;
     margin-top: 1rem;
+    margin-bottom: 10px;
 }
 
 .form-error {
@@ -49,4 +50,8 @@ label {
     color: var(--error);
     font-size: 0.9rem;
     margin-top: 2px;
+}
+
+#contactForm div {
+    margin-bottom: 20px;
 }

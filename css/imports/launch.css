@@ -41,11 +41,12 @@ h4.launchName {
     border-radius: 1rem;
     text-decoration: none;
     width: 350px;
-    height: 450px;
+    height: 350px;
     box-shadow: 0 10px 30px rgba(255, 128, 0, 0.2);
     align-items: center;
     position: relative;
     background-color: var(--powered);
+    margin-top: -5px;
 
 }
 

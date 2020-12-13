@@ -175,10 +175,10 @@ ul {
     transition: all 0.4s ease-in-out;
 }
 
-.navBar,
+/* .navBar,
 .nav-x {
     z-index: 9999;
-}
+} */
 
 .mobileView ul.nav-list.show-nav-list {
     opacity: 1;
@@ -350,4 +350,133 @@ img#btnNed:hover {
     left: 0;
     top: 0;
 
+}
+
+/* Timer styling */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    background: url(/assets/imgs/50618355216_5e55630344_c.jpg);
+    width: 100%;
+    margin: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background: linear-gradient(rgba(231, 207, 174, 0.9), rgba(43, 66, 62, 0.9)), url(/assets/imgs/50618355216_5e55630344_c.jpg);
+    padding: 20px;
+}
+
+.rocket {
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    font-size: 36px;
+}
+
+.timerDetails .timeCount {
+    font-size: x-large;
+    color: var(--blue);
+    font-weight: bolder;
+}
+
+/* footer styling */
+
+/* footer {
+    text-align: center;
+    margin-right: 0;
+    background-color: rgb(216, 162, 162);
+    position: bottom;
+
+} */
+
+footer {
+    height: 150px;
+}
+
+
+
+.footer {
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+.foot-p {
+    color: #8a8a8a;
+}
+
+.foot-img {
+    filter: grayscale(100%);
+}
+
+.foot-img:hover {
+    filter: grayscale(0%);
+}
+
+.foot-container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.foot-hd {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-shoe-col2,
+.footer-shoe-col4 {
+    min-width: 250px;
+    margin-bottom: 10px;
+}
+
+.footer-shoe-col1 {
+    flex-basis: 30%;
+}
+
+.footer-shoe-col2 {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-shoe-col2 img {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.footer-shoe-col4 {
+    flex-basis: 12%;
+    text-align: center;
+}
+
+.footerList {
+    list-style-type: none;
+    outline: 10px solid white;
+    width: 670px;
+    padding: 5px;
+    margin: 2px auto 2px auto;
+    text-align: center;
+}
+
+
+footer li {
+    display: inline;
+    margin: 0px 6px;
+}
+
+.foot-cr {
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.copy-kay {
+    text-align: center;
 }

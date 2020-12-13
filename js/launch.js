@@ -24,19 +24,18 @@ async function fetchLaunches() {
 
                 launchContainer.innerHTML += `<div class = "launchInfo" >
 
-                    <div class = "launch-section" >
-                    <h3 > mission: ${launches[i].mission_name} </h3>     
-                    <p> date:${launches[i].launch_date_utc} </p>   
-                    </div>
+                    
+                    <h4 class="launchName"> Mission: ${launches[i].mission_name} </h4>     
+                    <p class="launchDate"><span class="det-head">Date:</span>${launches[i].launch_date_utc} </p>   
                     <div class = "launch-section">  
-                    <p> mission details:${launches[i].details} </p>              
-                    <p> cost per launch: ${launches[i].cost_per_launch}</p>   
-                    <p> Launch year: ${launches[i].launch_year} </p>   
-                    <p> View <i class = "fas fa-rocket" ></i><a target = "_blank" href = "${launches[i].links.wikipedia}"> wikipedia 
+                    <p ><span class="det-head"> Mission details</span>:${launches[i].details} </p>             
+                    <p><span class="det-head">Cost per launch:</span> ${launches[i].cost_per_launch}</p>   
+                    <p><span class="det-head"> Launch year:</span> ${launches[i].launch_year} </p>   
+                    <p><span class="det-head">View</span><i class = "fas fa-rocket" ></i><a target = "_blank" href = "${launches[i].links.wikipedia}"> wikipedia 
                     </a></p>
                     <p><a target = "_blank" href = "${launches[i].links.video_link}"> YouTube Link 
                     </a></p> 
-                    </div> 
+                   
 
                     </div>`;
             }
